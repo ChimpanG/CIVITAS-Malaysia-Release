@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="f4959c6e-9181-4a16-aebc-20690fb07cb9" version="1">
+  <Properties>
+    <Name>CIVITAS [ICON_Government] [COLOR_FLOAT_CULTURE]Malaysia[ENDCOLOR]</Name>
+    <Description>Adds Malaysia as a playable civilization under Iskandar and Tun Perak.</Description>
+    <Teaser>Adds Malaysia as a playable civilization under Iskandar and Tun Perak.</Teaser>
+    <Authors>ChimpanG, Belle, Digihuman, SeelingCat, Sailor Cat, Chrisy15, pOkiehl, thecrazyscotsman</Authors>
+    <SpecialThanks>Deliverator</SpecialThanks>
+  </Properties>
+  <ActionCriteria>
+    <Criteria id="XP1">
+		<GameCoreInUse>Expansion1</GameCoreInUse>
+    </Criteria>
+    <Criteria id="William">
+		<LeaderPlayable>Players:Expansion1_Players::LEADER_CVS_WILLIAM</LeaderPlayable>
+	</Criteria>
+    <Criteria id="Rollo">
+		<LeaderPlayable>Players:Expansion1_Players::LEADER_CVS_ROLLO</LeaderPlayable>
+	</Criteria>
+  </ActionCriteria>  
+  <FrontEndActions>
+    <UpdateDatabase id="Malaysia_Master">
+      <Properties>
+        <LoadOrder>-1</LoadOrder>
+      </Properties>
+      <File>Core/Master/Malaysia_Master.sql</File>
+    </UpdateDatabase>
+    <UpdateDatabase id="Malaysia_Setup_DB">
+      <File>Core/Leaders/Iskandar/Iskandar_Config.sql</File>
+      <File>Core/Leaders/Tun Perak/TunPerak_Config.sql</File>
+    </UpdateDatabase>
+    <UpdateText id="Malaysia_Setup_Text">
+      <File>Core/Civilization/Malaysia_Localisation.sql</File>
+      <File>Core/Leaders/Iskandar/Iskandar_Localisation.sql</File>
+      <File>Core/Leaders/Tun Perak/TunPerak_Localisation.sql</File>
+    </UpdateText>
+    <UpdateIcons id="Malaysia_Setup_Icons">
+      <File>Core/Civilization/Malaysia_Icons.sql</File>
+      <File>Core/Leaders/Iskandar/Iskandar_Icons.sql</File>
+      <File>Core/Leaders/Tun Perak/TunPerak_Icons.sql</File>
+    </UpdateIcons>
+    <UpdateArt id="ArtDep">
+      <File>CIVITAS [ICON_Government] [COLOR_FLOAT_CULTURE]Malaysia[ENDCOLOR].dep</File>
+    </UpdateArt>
+  </FrontEndActions>
+  <InGameActions>
+    <UpdateDatabase id="Malaysia_DB">
+      <Properties>
+        <LoadOrder>100</LoadOrder>
+      </Properties>
+      <File>Core/Civilization/Malaysia_Civilization.sql</File>
+      <File>Core/Civilization/Malaysia_UA.sql</File>
+      <File>Core/Civilization/Malaysia_UI.sql</File>
+      <File>Core/Civilization/Malaysia_UU.sql</File>
+    </UpdateDatabase>
+    <UpdateText id="Malaysia_Text">
+      <Properties>
+        <LoadOrder>100</LoadOrder>
+      </Properties>
+      <File>Core/Civilization/Malaysia_Localisation.sql</File>
+    </UpdateText>
+    <UpdateIcons id="Malaysia_Icons">
+      <Properties>
+        <LoadOrder>100</LoadOrder>
+      </Properties>
+      <File>Core/Civilization/Malaysia_Icons.sql</File>
+    </UpdateIcons>
+    <UpdateDatabase id="Iskandar_DB">
+      <Properties>
+        <LoadOrder>110</LoadOrder>
+      </Properties>
+      <Criteria>Iskandar</Criteria>
+      <File>Core/Leaders/Iskandar/Iskandar_Leader.sql</File>
+      <File>Core/Leaders/Iskandar/Iskandar_UA.sql</File>
+      <File>Core/Leaders/Iskandar/Iskandar_Agenda.sql</File>
+      <File>Core/Leaders/Iskandar/Iskandar_Strategy.sql</File>
+    </UpdateDatabase>
+    <UpdateText id="Iskandar_Text">
+      <Properties>
+        <LoadOrder>110</LoadOrder>
+      </Properties>
+      <Criteria>Iskandar</Criteria>
+      <File>Core/Leaders/Iskandar/Iskandar_Localisation.sql</File>
+    </UpdateText>
+    <UpdateIcons id="Iskandar_Icons">
+      <Properties>
+        <LoadOrder>110</LoadOrder>
+      </Properties>
+      <Criteria>Iskandar</Criteria>
+      <File>Core/Leaders/Iskandar/Iskandar_Icons.sql</File>
+    </UpdateIcons>
+    <UpdateArt id="ArtDep">
+      <File>CIVITAS [ICON_Government] [COLOR_FLOAT_CULTURE]Malaysia[ENDCOLOR].dep</File>
+    </UpdateArt>
+    <AddGameplayScripts id="Malaysia_Scripts">
+      <Properties>
+        <LoadOrder>115</LoadOrder>
+      </Properties>
+      <File>Core/Civilization/Malaysia_UA.lua</File>
+      <File>Core/Leaders/Iskandar/Iskandar_UA.lua</File>
+    </AddGameplayScripts>
+    <UpdateDatabase id="Malaysia_ModSupport_DB">
+      <Properties>
+        <LoadOrder>120</LoadOrder>
+      </Properties>
+      <File>Core/ModSupport/Historical Religions/Historical Religions.sql</File>
+      <File>Core/ModSupport/Map Scripts/40sw4rm.sql</File>
+      <File>Core/ModSupport/Map Scripts/YNAEMP.sql</File>
+      <File>Core/ModSupport/RwF/Malaysia_MS_RwF.sql</File>
+    </UpdateDatabase>
+    <UpdateText id="Malaysia_ModSupport_Text">
+      <Properties>
+        <LoadOrder>120</LoadOrder>
+      </Properties>
+      <File>Core/ModSupport/RwF/Malaysia_MS_RwF_Localisation.sql</File>
+    </UpdateText>
+    <UpdateDatabase id="TunPerak_DB">
+      <Properties>
+        <LoadOrder>110</LoadOrder>
+      </Properties>
+      <Criteria>TunPerak</Criteria>
+      <File>Core/Leaders/Tun Perak/TunPerak_Leader.sql</File>
+      <File>Core/Leaders/Tun Perak/TunPerak_UA.sql</File>
+      <File>Core/Leaders/Tun Perak/TunPerak_Agenda.sql</File>
+      <File>Core/Leaders/Tun Perak/TunPerak_Strategy.sql</File>
+      <File>Core/Leaders/Tun Perak/TunPerak_UU.sql</File>
+    </UpdateDatabase>
+    <UpdateText id="TunPerak_Text">
+      <Properties>
+        <LoadOrder>110</LoadOrder>
+      </Properties>
+      <File>Core/Leaders/Tun Perak/TunPerak_Localisation.sql</File>
+    </UpdateText>
+    <UpdateIcons id="TunPerak_Icons">
+      <Properties>
+        <LoadOrder>110</LoadOrder>
+      </Properties>
+      <Criteria>TunPerak</Criteria>
+      <File>Core/Leaders/Tun Perak/TunPerak_Icons.sql</File>
+    </UpdateIcons>
+    <UpdateDatabase id="Malaysia_XP1_DB">
+      <Properties>
+        <LoadOrder>105</LoadOrder>
+      </Properties>
+      <Criteria>XP1</Criteria>
+      <File>Core/Civilization/XP1/Malaysia_UI_XP1.sql</File>
+      <File>Core/Civilization/XP1/Malaysia_UU_XP1.sql</File>
+    </UpdateDatabase>
+    <UpdateDatabase id="Iskandar_XP1_DB">
+      <Properties>
+        <LoadOrder>115</LoadOrder>
+      </Properties>
+      <Criteria>XP1</Criteria>
+      <Criteria>Iskandar</Criteria>
+      <File>Core/Leaders/Iskandar/XP1/Iskandar_Strategy_XP1.sql</File>
+    </UpdateDatabase>
+    <UpdateDatabase id="TunPerak_XP1_DB">
+      <Properties>
+        <LoadOrder>115</LoadOrder>
+      </Properties>
+      <Criteria>XP1</Criteria>
+      <Criteria>TunPerak</Criteria>
+      <File>Core/Leaders/Tun Perak/XP1/TunPerak_Strategy_XP1.sql</File>
+      <File>Core/Leaders/Tun Perak/XP1/TunPerak_UU_XP1.sql</File>
+    </UpdateDatabase>
+  </InGameActions>
+  <Files>
+    <File>ArtDefs/Civilizations.artdef</File>
+    <File>ArtDefs/Cultures.artdef</File>
+    <File>ArtDefs/Improvements.artdef</File>
+    <File>ArtDefs/Landmarks.artdef</File>
+    <File>ArtDefs/LeaderFallback.artdef</File>
+    <File>ArtDefs/Leaders.artdef</File>
+    <File>ArtDefs/StrategicView.artdef</File>
+    <File>ArtDefs/Units.artdef</File>
+    <File>CIVITAS [ICON_Government] [COLOR_FLOAT_CULTURE]Malaysia[ENDCOLOR].dep</File>
+    <File>Core/Civilization/Archive/Malaysia_UA.lua</File>
+    <File>Core/Civilization/Malaysia_Civilization.sql</File>
+    <File>Core/Civilization/Malaysia_Icons.sql</File>
+    <File>Core/Civilization/Malaysia_Localisation.sql</File>
+    <File>Core/Civilization/Malaysia_UA.lua</File>
+    <File>Core/Civilization/Malaysia_UA.sql</File>
+    <File>Core/Civilization/Malaysia_UI.sql</File>
+    <File>Core/Civilization/Malaysia_UU.sql</File>
+    <File>Core/Civilization/XP1/Malaysia_UI_XP1.sql</File>
+    <File>Core/Civilization/XP1/Malaysia_UU_XP1.sql</File>
+    <File>Core/Leaders/Iskandar/Iskandar_Agenda.sql</File>
+    <File>Core/Leaders/Iskandar/Iskandar_Config.sql</File>
+    <File>Core/Leaders/Iskandar/Iskandar_Icons.sql</File>
+    <File>Core/Leaders/Iskandar/Iskandar_Leader.sql</File>
+    <File>Core/Leaders/Iskandar/Iskandar_Localisation.sql</File>
+    <File>Core/Leaders/Iskandar/Iskandar_Strategy.sql</File>
+    <File>Core/Leaders/Iskandar/Iskandar_UA.lua</File>
+    <File>Core/Leaders/Iskandar/Iskandar_UA.sql</File>
+    <File>Core/Leaders/Iskandar/XP1/Iskandar_Strategy_XP1.sql</File>
+    <File>Core/Leaders/Tun Perak/TunPerak_Agenda.sql</File>
+    <File>Core/Leaders/Tun Perak/TunPerak_Config.sql</File>
+    <File>Core/Leaders/Tun Perak/TunPerak_Icons.sql</File>
+    <File>Core/Leaders/Tun Perak/TunPerak_Leader.sql</File>
+    <File>Core/Leaders/Tun Perak/TunPerak_Localisation.sql</File>
+    <File>Core/Leaders/Tun Perak/TunPerak_Strategy.sql</File>
+    <File>Core/Leaders/Tun Perak/TunPerak_UA.sql</File>
+    <File>Core/Leaders/Tun Perak/TunPerak_UU.sql</File>
+    <File>Core/Leaders/Tun Perak/XP1/TunPerak_Strategy_XP1.sql</File>
+    <File>Core/Leaders/Tun Perak/XP1/TunPerak_UU_XP1.sql</File>
+    <File>Core/Master/Malaysia_Master.sql</File>
+    <File>Core/ModSupport/Historical Religions/Historical Religions.sql</File>
+    <File>Core/ModSupport/Map Scripts/40sw4rm.sql</File>
+    <File>Core/ModSupport/Map Scripts/YNAEMP.sql</File>
+    <File>Core/ModSupport/RwF/Malaysia_MS_RwF.sql</File>
+    <File>Core/ModSupport/RwF/Malaysia_MS_RwF_Localisation.sql</File>
+    <File>Platforms/MacOS/BLPs/LeaderFallback.blp</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Berzerker_DeathA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Berzerker_DeathFromHeroAttackA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_BombardCannonDefender_Left_AttackA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_BombardCannon_AttackA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_BombardCannon_IdleA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_BombardCannon_RunFwdA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_BombardCannon_RunStopA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Conquistador_BraceA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Conquistador_BraceB</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Conquistador_BraceC</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Conquistador_Dodge</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Conquistador_HopBackDefend</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Conquistador_IdleA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Conquistador_ReadyWeaponMatch</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Conquistador_RunFwdA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Conquistador_StrafeBackA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Conquistador_StrafeFwdA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Horseman_BipedalDeathMeleeA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Impr_HeroDeath</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Infantry_DeathB</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Musketman_CombatIdlePoseA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Musketman_CombatIdlePoseB</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Musketman_CombatIdlePoseC</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Musketman_CombatIdlePoseD</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Musketman_IdleA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Musketman_IdleB</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Musketman_IdleC</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Musketman_IdleD</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Musketman_RunStopA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Musketman_RunStopB</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Musketman_RunStopC</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Musketman_RunStopD</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Musketman_Shoot</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Musketman_ShootAndReload</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Pikeman_DeathA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Pikeman_DeathB</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Redcoat_DeathA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Redcoat_HeroicA_Death</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Scout_DeathA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Scout_DeathB</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Slinger_DeathA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Spearman_DeathFlyBackA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Spearman_DeathFromJumpStabFlipUnitInAir</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Spearman_SpawnA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Spearman_VictoryA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Tank_MainGunDeathA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_UnitHeavy_Death_HitToHeadA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_UnitMedium_BreathingA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_UnitMedium_BreathingA_NoArms</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_UnitMedium_BreathingA_NoArmsUncompressed</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_UnitMedium_CorkscrewDeathFromSwordsmanHeroA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_UnitMedium_Death_LegionHeroAttackA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_UnitMedium_Death_SamuraiHeroAttackA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_UnitMedium_ProjectileDeathFlyBackA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Attack</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Backward</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Combat_Run</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Combat_Run_StopA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Death</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Forward</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_HeroDeath</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_IdleB</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Idle_CombatA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Idle_CombatB</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Idle_CombatC</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Idle_CombatD</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_React</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_React_RangedA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_React_RangedB</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_React_RangedC</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Run</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Run_StopA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Run_StopB</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Run_StopC</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Run_StopD</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Warrior_AttackMeleeA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Warrior_AttackMeleeB</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Warrior_DeathMeleeA</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Warrior_DeathMeleeB</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Burn_BaseColor</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Burn_G</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Burn_M</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_CVS_Pesilat_ArmorA_m</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_B</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_FOW</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_H</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_02_B</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_02_FOW</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_02_H</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_PIL_B</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_PIL_H</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_CVS_Pesilat_ArmorA_a2_CVS_Pesilat_ArmorA_t</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Decals_Parts_Ancient_01_B_null</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Decals_Parts_Ancient_02_B_null</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Decals_Parts_Ancient_PIL_B_null</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_LelaDefender_a_null</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Lela_mat_BaseColor_null</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Rumah_A2_mat_BaseColor_null</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Rumah_D2_BaseColor_null</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Rumah_G_BaseColor_null</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Samurai_Accessories_a_Samurai_Accessories_t</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_GreatMedievalMerchant_Male_ao</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_GreatMedievalMerchant_Male_g</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_GreatMedievalMerchant_Male_m</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_GreatMedievalMerchant_Male_n0</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_GreatMedievalMerchant_Male_n1</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Lela_mat_Glossiness</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Lela_mat_Metallic</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Lela_mat_Normal0</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Lela_mat_Normal1</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Rumah_A2_Ambient_occlusion</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Rumah_A2_mat_Glossiness</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Rumah_A2_mat_Metallic</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Rumah_A2_mat_Normal0</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Rumah_A2_mat_Normal1</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Rumah_D2_Glossiness</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Rumah_D2_Metallic</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Rumah_D2_Normal0</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Rumah_D2_Normal1</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Rumah_G_Glossiness</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Rumah_G_Metallic</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Rumah_G_Normal0</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Rumah_G_Normal1</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Samurai_Accessories_ao</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Samurai_Accessories_g</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Samurai_Accessories_m</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Samurai_Accessories_n0</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Samurai_Accessories_n1</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_VaruRider_A_ao</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_VaruRider_A_g</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_VaruRider_A_n0</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_VaruRider_A_n1</File>
+    <File>Platforms/MacOS/BLPs/TileBase.blp</File>
+    <File>Platforms/MacOS/BLPs/UI/Icons.blp</File>
+    <File>Platforms/MacOS/BLPs/UI/StrategicView.blp</File>
+    <File>Platforms/MacOS/BLPs/units/units.blp</File>
+    <File>Platforms/Windows/BLPs/LeaderFallback.blp</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Berzerker_DeathA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Berzerker_DeathFromHeroAttackA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_BombardCannonDefender_Left_AttackA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_BombardCannon_AttackA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_BombardCannon_IdleA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_BombardCannon_RunFwdA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_BombardCannon_RunStopA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Conquistador_BraceA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Conquistador_BraceB</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Conquistador_BraceC</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Conquistador_Dodge</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Conquistador_HopBackDefend</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Conquistador_IdleA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Conquistador_ReadyWeaponMatch</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Conquistador_RunFwdA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Conquistador_StrafeBackA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Conquistador_StrafeFwdA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Horseman_BipedalDeathMeleeA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Impr_HeroDeath</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Infantry_DeathB</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Musketman_CombatIdlePoseA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Musketman_CombatIdlePoseB</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Musketman_CombatIdlePoseC</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Musketman_CombatIdlePoseD</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Musketman_IdleA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Musketman_IdleB</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Musketman_IdleC</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Musketman_IdleD</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Musketman_RunStopA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Musketman_RunStopB</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Musketman_RunStopC</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Musketman_RunStopD</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Musketman_Shoot</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Musketman_ShootAndReload</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Pikeman_DeathA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Pikeman_DeathB</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Redcoat_DeathA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Redcoat_HeroicA_Death</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Scout_DeathA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Scout_DeathB</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Slinger_DeathA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Spearman_DeathFlyBackA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Spearman_DeathFromJumpStabFlipUnitInAir</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Spearman_SpawnA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Spearman_VictoryA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Tank_MainGunDeathA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_UnitHeavy_Death_HitToHeadA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_UnitMedium_BreathingA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_UnitMedium_BreathingA_NoArms</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_UnitMedium_BreathingA_NoArmsUncompressed</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_UnitMedium_CorkscrewDeathFromSwordsmanHeroA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_UnitMedium_Death_LegionHeroAttackA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_UnitMedium_Death_SamuraiHeroAttackA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_UnitMedium_ProjectileDeathFlyBackA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Attack</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Backward</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Combat_Run</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Combat_Run_StopA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Death</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Forward</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_HeroDeath</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_IdleB</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Idle_CombatA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Idle_CombatB</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Idle_CombatC</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Idle_CombatD</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_React</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_React_RangedA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_React_RangedB</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_React_RangedC</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Run</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Run_StopA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Run_StopB</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Run_StopC</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Run_StopD</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Warrior_AttackMeleeA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Warrior_AttackMeleeB</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Warrior_DeathMeleeA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Warrior_DeathMeleeB</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Burn_BaseColor</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Burn_G</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Burn_M</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_CVS_Pesilat_ArmorA_m</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_B</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_FOW</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_H</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_02_B</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_02_FOW</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_02_H</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_PIL_B</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_PIL_H</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_CVS_Pesilat_ArmorA_a2_CVS_Pesilat_ArmorA_t</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Decals_Parts_Ancient_01_B_null</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Decals_Parts_Ancient_02_B_null</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Decals_Parts_Ancient_PIL_B_null</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_LelaDefender_a_null</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Lela_mat_BaseColor_null</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Rumah_A2_mat_BaseColor_null</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Rumah_D2_BaseColor_null</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Rumah_G_BaseColor_null</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Samurai_Accessories_a_Samurai_Accessories_t</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_GreatMedievalMerchant_Male_ao</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_GreatMedievalMerchant_Male_g</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_GreatMedievalMerchant_Male_m</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_GreatMedievalMerchant_Male_n0</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_GreatMedievalMerchant_Male_n1</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Lela_mat_Glossiness</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Lela_mat_Metallic</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Lela_mat_Normal0</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Lela_mat_Normal1</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Rumah_A2_Ambient_occlusion</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Rumah_A2_mat_Glossiness</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Rumah_A2_mat_Metallic</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Rumah_A2_mat_Normal0</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Rumah_A2_mat_Normal1</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Rumah_D2_Glossiness</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Rumah_D2_Metallic</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Rumah_D2_Normal0</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Rumah_D2_Normal1</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Rumah_G_Glossiness</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Rumah_G_Metallic</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Rumah_G_Normal0</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Rumah_G_Normal1</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Samurai_Accessories_ao</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Samurai_Accessories_g</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Samurai_Accessories_m</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Samurai_Accessories_n0</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Samurai_Accessories_n1</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_VaruRider_A_ao</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_VaruRider_A_g</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_VaruRider_A_n0</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_VaruRider_A_n1</File>
+    <File>Platforms/Windows/BLPs/TileBase.blp</File>
+    <File>Platforms/Windows/BLPs/UI/Icons.blp</File>
+    <File>Platforms/Windows/BLPs/UI/StrategicView.blp</File>
+    <File>Platforms/Windows/BLPs/units/units.blp</File>
+    <File>XLPs/Icons.xlp</File>
+    <File>XLPs/LeaderFallback.xlp</File>
+    <File>XLPs/TileBase.xlp</File>
+    <File>XLPs/Units.xlp</File>
+  </Files>
+</Mod>

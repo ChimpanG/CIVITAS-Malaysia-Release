@@ -10,28 +10,40 @@
 	<m_PackageName text="TileBase"/>
 	<m_Entries>
 		<Element>
-			<m_EntryID text="CVS_Rumah_A"/>
-			<m_ObjectName text="CVS_Rumah_A"/>
+			<m_EntryID text="DIS_HBR_Dermaga_Brazier"/>
+			<m_ObjectName text="DIS_HBR_Dermaga_Brazier"/>
 		</Element>
 		<Element>
-			<m_EntryID text="CVS_Rumah_D"/>
-			<m_ObjectName text="CVS_Rumah_D"/>
+			<m_EntryID text="DIS_HBR_Dermaga_Ends"/>
+			<m_ObjectName text="DIS_HBR_Dermaga_Ends"/>
 		</Element>
 		<Element>
-			<m_EntryID text="IMP_Rumah_Base_01"/>
-			<m_ObjectName text="IMP_Rumah_Base_01"/>
+			<m_EntryID text="DIS_HBR_Dermaga_Base_03"/>
+			<m_ObjectName text="DIS_HBR_Dermaga_Base_03"/>
 		</Element>
 		<Element>
-			<m_EntryID text="IMP_Rumah_Base_03"/>
-			<m_ObjectName text="IMP_Rumah_Base_03"/>
+			<m_EntryID text="DIS_HBR_Dermaga_Seaport_03"/>
+			<m_ObjectName text="DIS_HBR_Dermaga_Seaport_03"/>
 		</Element>
 		<Element>
-			<m_EntryID text="IMP_Rumah_Base_02"/>
-			<m_ObjectName text="IMP_Rumah_Base_02"/>
+			<m_EntryID text="DIS_HBR_Dermaga_Shipyard_03"/>
+			<m_ObjectName text="DIS_HBR_Dermaga_Shipyard_03"/>
 		</Element>
 		<Element>
-			<m_EntryID text="CVS_Rumah_G"/>
-			<m_ObjectName text="CVS_Rumah_G"/>
+			<m_EntryID text="Dermaga_Reef_A"/>
+			<m_ObjectName text="Dermaga_Reef_A"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Dermaga_Reef_B"/>
+			<m_ObjectName text="Dermaga_Reef_B"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Dermaga_Reef_C"/>
+			<m_ObjectName text="Dermaga_Reef_C"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Dermaga_Reef_Decal"/>
+			<m_ObjectName text="Dermaga_Reef_Decal"/>
 		</Element>
 	</m_Entries>
 	<m_AllowedPlatforms>

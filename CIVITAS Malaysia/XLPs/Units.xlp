@@ -10,28 +10,8 @@
 	<m_PackageName text="units/units"/>
 	<m_Entries>
 		<Element>
-			<m_EntryID text="CVS_Pesilat_ArmorA"/>
-			<m_ObjectName text="CVS_Pesilat_ArmorA"/>
-		</Element>
-		<Element>
-			<m_EntryID text="CVS_Pesilat_SpearA"/>
-			<m_ObjectName text="CVS_Pesilat_SpearA"/>
-		</Element>
-		<Element>
-			<m_EntryID text="CVS_Pesilat_HatA"/>
-			<m_ObjectName text="CVS_Pesilat_HatA"/>
-		</Element>
-		<Element>
-			<m_EntryID text="CVS_LelaCannon_A"/>
-			<m_ObjectName text="CVS_LelaCannon_A"/>
-		</Element>
-		<Element>
-			<m_EntryID text="CVS_LelaOperator_A"/>
-			<m_ObjectName text="CVS_LelaOperator_A"/>
-		</Element>
-		<Element>
-			<m_EntryID text="CVS_LelaDefender_A"/>
-			<m_ObjectName text="CVS_LelaDefender_A"/>
+			<m_EntryID text="Lancaran"/>
+			<m_ObjectName text="Lancaran"/>
 		</Element>
 	</m_Entries>
 	<m_AllowedPlatforms>

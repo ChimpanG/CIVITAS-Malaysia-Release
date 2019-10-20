@@ -229,6 +229,14 @@
 							<m_nValue>1</m_nValue>
 							<m_ParamName text="TileCount"/>
 						</Element>
+						<Element class="AssetObjects..ArtDefReferenceValue">
+							<m_ElementName text=""/>
+							<m_RootCollectionName text="BuildingChains"/>
+							<m_ArtDefPath text=""/>
+							<m_CollectionIsLocked>false</m_CollectionIsLocked>
+							<m_TemplateName text=""/>
+							<m_ParamName text="BuildingChain"/>
+						</Element>
 					</m_Values>
 				</m_Fields>
 				<m_ChildCollections>
@@ -284,6 +292,14 @@
 							<m_nValue>1</m_nValue>
 							<m_ParamName text="TileCount"/>
 						</Element>
+						<Element class="AssetObjects..ArtDefReferenceValue">
+							<m_ElementName text=""/>
+							<m_RootCollectionName text="BuildingChains"/>
+							<m_ArtDefPath text=""/>
+							<m_CollectionIsLocked>false</m_CollectionIsLocked>
+							<m_TemplateName text=""/>
+							<m_ParamName text="BuildingChain"/>
+						</Element>
 					</m_Values>
 				</m_Fields>
 				<m_ChildCollections>
@@ -338,6 +354,14 @@
 						<Element class="AssetObjects..IntValue">
 							<m_nValue>1</m_nValue>
 							<m_ParamName text="TileCount"/>
+						</Element>
+						<Element class="AssetObjects..ArtDefReferenceValue">
+							<m_ElementName text=""/>
+							<m_RootCollectionName text="BuildingChains"/>
+							<m_ArtDefPath text=""/>
+							<m_CollectionIsLocked>false</m_CollectionIsLocked>
+							<m_TemplateName text=""/>
+							<m_ParamName text="BuildingChain"/>
 						</Element>
 					</m_Values>
 				</m_Fields>

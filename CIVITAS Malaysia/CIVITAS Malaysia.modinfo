@@ -4,8 +4,10 @@
     <Name>CIVITAS [ICON_GOVERNMENT] Malaysia</Name>
     <Description>Adds Malaysia as a new civilization.</Description>
     <CompatibleVersions xmlns="http://schemas.microsoft.com/developer/msbuild/2003">2.0</CompatibleVersions>
+    <Created>1571585023</Created>
     <Teaser>Adds Malaysia as a new civilization.</Teaser>
     <Authors>ChimpanG</Authors>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
   </Properties>
   <Dependencies>
     <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
@@ -91,88 +93,20 @@
     <File>Core/Malaysia_UA.sql</File>
     <File>Core/Malaysia_UI.sql</File>
     <File>Core/Malaysia_UU.sql</File>
-    <File>Platforms/MacOS/BLPs/LensAssets.blp</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Caravel_Attack_Cannons_L</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Caravel_Attack_Cannons_R</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Caravel_Death</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Caravel_IdleA</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Caravel_RunA</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Caravel_RunStopA</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Burn_BaseColor</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Burn_G</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Burn_M</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_CIVILIZATION_CVS_MALAYSIA_OVERLAY</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_CIVILIZATION_CVS_MALAYSIA_PRESSURE</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Base_03_CON_mat_ao</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Base_03_CON_mat_g</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Base_03_CON_mat_m</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Base_03_CON_mat_n0</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Base_03_CON_mat_n1</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Base_03_mat_ao</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Base_03_mat_g</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Base_03_mat_m</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Base_03_mat_n0</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Base_03_mat_n1</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Base_Brazier_ao</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Base_Brazier_g</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Base_Brazier_m</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Base_Brazier_n0</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Base_Brazier_n1</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Base_Ends_mat_ao</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Base_Ends_mat_g</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Base_Ends_mat_m</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Base_Ends_mat_n0</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Base_Ends_mat_n1</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Seaport_CON_ao</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Seaport_CON_g</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Seaport_CON_n0</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Seaport_CON_n1</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Seaport_mat_ao</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Seaport_mat_n0</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Seaport_mat_n1</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Shipyard_CON_mat_ao</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Shipyard_CON_mat_n0</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Shipyard_CON_mat_n1</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Shipyard_mat_ao_2</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Shipyard_mat_n_20</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Dermaga_Shipyard_mat_n_21</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Dermaga_Base_03_CON_mat_b_null</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Dermaga_Base_03_mat_b_null</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Dermaga_Base_Brazier_b_null</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Dermaga_Base_Ends_mat_b_null</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Dermaga_Seaport_CON_b_null</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Dermaga_Seaport_mat_b_null</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Dermaga_Shipyard_CON_mat_b_null</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Dermaga_Shipyard_mat_b_2_null</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_IMP_Shipwreck_Reef_B_null</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_LancaranB_b_null</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_NWON_Reef_Fish_B_null</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_Harbor_Base_A</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_IMP_Shipwreck_Reef_B</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_IMP_Shipwreck_Reef_FOW</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_IMP_Shipwreck_Reef_H</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_LancaranB_ao</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_LancaranB_g</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_LancaranB_m</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_LancaranB_n0</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_LancaranB_n1</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_NWON_Reef_Fish_G</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_NWON_Reef_Fish_N0</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_NWON_Reef_Fish_N1</File>
-    <File>Platforms/MacOS/BLPs/TileBase.blp</File>
-    <File>Platforms/MacOS/BLPs/UI/Icons.blp</File>
-    <File>Platforms/MacOS/BLPs/UI/StrategicView.blp</File>
-    <File>Platforms/MacOS/BLPs/units/units.blp</File>
     <File>Platforms/Windows/BLPs/LensAssets.blp</File>
-    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Caravel_Attack_Cannons_L</File>
-    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Caravel_Attack_Cannons_R</File>
-    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Caravel_Death</File>
-    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Caravel_IdleA</File>
-    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Caravel_RunA</File>
-    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Caravel_RunStopA</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_u_byzantium_dromon_attacka</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_u_byzantium_dromon_attackb</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_u_byzantium_dromon_bombard_defense</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_u_byzantium_dromon_combat_ready_idle</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_u_byzantium_dromon_deatha</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_u_byzantium_dromon_deathb</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_u_byzantium_dromon_idlea</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_u_byzantium_dromon_idlea_trans_idleb</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_u_byzantium_dromon_run</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_u_byzantium_dromon_stop_run</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_u_byzantium_dromon_victory</File>
     <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Burn_BaseColor</File>
     <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Burn_G</File>
-    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Burn_M</File>
     <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_CIVILIZATION_CVS_MALAYSIA_OVERLAY</File>
     <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_CIVILIZATION_CVS_MALAYSIA_PRESSURE</File>
     <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Dermaga_Base_03_CON_mat_ao</File>

@@ -18,6 +18,10 @@
 							<m_bValue>false</m_bValue>
 							<m_ParamName text="CanAffectBuildings"/>
 						</Element>
+						<Element class="AssetObjects..BoolValue">
+							<m_bValue>false</m_bValue>
+							<m_ParamName text="CanConnectToCanals"/>
+						</Element>
 					</m_Values>
 				</m_Fields>
 				<m_ChildCollections>

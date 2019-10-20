@@ -118,6 +118,10 @@
 						<m_CollectionName text="Audio"/>
 						<m_ReplaceMergedCollectionElements>false</m_ReplaceMergedCollectionElements>
 					</Element>
+					<Element>
+						<m_CollectionName text="AttachmentVisibility"/>
+						<m_ReplaceMergedCollectionElements>false</m_ReplaceMergedCollectionElements>
+					</Element>
 				</m_ChildCollections>
 				<m_Name text="UNIT_CVS_MALAYSIA_UU"/>
 				<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
